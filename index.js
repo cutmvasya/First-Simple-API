@@ -16,6 +16,10 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('*', function(req, res){
+    res.status(404).send('Page not found! wkwkwk');
+});
+
 try{
     app.listen(port, () => {
         console.log(`Server is started at ${Date()} in ${env} and listening on port ${port}`)
