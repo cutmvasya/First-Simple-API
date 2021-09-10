@@ -8,7 +8,7 @@ app.use('', router);
 dotenv.config();
 const port = process.env.PORT || 5050
     , env = process.env.NODE_ENV || 'development' 
-    
+
 app.get('/', (req, res) => {
     res.status(200).json({
         success: true,
